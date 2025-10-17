@@ -17,18 +17,17 @@ h3{
 /* Challenge 3: Change the style of the font for all spans to italic */
 h1 {
    font-size:60pt;
-  }
+   }
 /* Challenge 4: Change the family of font being used for all paragraphs to "Arial" */
   p{
     font-family: Arial;
-  
-  }
+   }
 /* Challenge 5: Change the family of font being used for all lists to "Comic Sans MS".  What element creates a list? */
 ul {
   font-family:Comic Sans MS;
-}
+   }
 /* Chalenge 6: Change the background color of the div to blue, color of the text to white and the weight of the font to bold.*/
       div{
         background-color:blue; font-weight: Bold; color:white;
-      }
+         }
 /* Hint:  You can specify several CSS rules for one element by separating the rules with semi-colons. Look at some examples on w3schools */
