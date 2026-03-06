@@ -3,6 +3,9 @@
        2) Display BMI status as per the chart in index.html
        3) Display the corresponding image based on the BMI status.
 */
+function Size(){
+       
+}
 /* 
 Guideline:
 1) Create the function
