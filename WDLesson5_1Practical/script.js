@@ -12,18 +12,16 @@ Year 3: $xxxxxx
 ...
 Year N: $xxxxxx
 */
-function intersetformula(){
-    let p= parseFloat(document.getElementById("pb").value);
-    let r = parseFloat(document.getElementById("ir").value);
-    let n= parseFloat(document.getElementById("tp").value);
-    let t = parseFloat(document.getElementById("nt").value);
+function intrestformula(){
+    let p= parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let n= parseInt(document.getElementById("n").value);
+    let years = parseInt(document.getElementById("t").value);
     let output= document.getElementById("output");
     let build ="";
-    for(let it=0; it<=t; it+=1){
-       let a = p*(Math.pow(1+(r/100)/n,n*t))
-       build+= `Year ${t}: $ ${a.toFixed (2)}<br>`;
+    for(let t=0; t<=years; t+=1){
+         let a = p*(1+r/n)**(n*t);
+         build += `Year ${t}: $ ${a.toFixed(2)}<br>`;
     }    
-
-    
-   output.innerHTML = build;
+    output.innerHTML = build;
 }
