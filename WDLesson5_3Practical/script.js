@@ -10,8 +10,26 @@
         6) After the for loop complete building the table and display it
 */
 
-function balance(){
+function balance(){ 
+       let p =parseInt(document.getElementById("p").value);
+       let r =parseInt(document.getElementById("r").value);   
+       let t =parseInt(document.getElementById("t").value);
+       
+        let output = document.getElementById("output")   
+        let build ="";
+         build+=`<table>
+                <tr><th> Year</th> <th>Balance</th></tr>`;
 
+for(let i=0; i<=t;i+=1){
+        let a = p* Math.pow(1 +(r/100),i);
+        build+=`<tr>
+                <td>${i}</td>
+                <td>$${a.toFixed(2)}</td>
+                </tr>`;
+                
+}    
+build+="</table>";               
+output.innerHTML= build;
 
 }
 
@@ -21,6 +39,6 @@ function balance(){
         3) Adjust the heading reflect the compound length.  Below are some typical lengths
               a. n = 1 then the interest is compounded yearly
               b. n = 12 then the interest is compounded monthly
-              c. n = 3 then the interest is compounded quarterly
+              c. n = 4 then the interest is compounded quarterly
               d. n = 2 then the interest is compounded bi-yearly
 */ 
